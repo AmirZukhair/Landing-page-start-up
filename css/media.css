@@ -63,7 +63,7 @@
     }
 
     .top {
-    background: url(img/shape1.png) no-repeat right top, url(img/shape2.png) no-repeat left 65%, url(img/bg.png) no-repeat top left;
+    background: url(../img/shape1.png) no-repeat right top, url(../img/shape2.png) no-repeat left 65%, url(../img/bg.png) no-repeat top left;
 }
 .top__content-title {
     font-size: 35px; 
