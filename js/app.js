@@ -39,11 +39,15 @@ $('.review-slider').slick({
 
 let burger = document.querySelector('.burger');
 let menu = document.querySelector('.header__list');
+let body = document.querySelector('body');
 
 
 burger.addEventListener('click', function(){
    burger.classList.toggle('active');
     menu.classList.toggle('active');
+    body.classList.toggle('lock');
+
+
 });
 
 
@@ -53,6 +57,11 @@ for (anchor of anchors){
   if(anchor) {
     anchor.addEventListener('click',function(e){
       e.preventDefault();
+
+       burger.classList.remove('active');
+       menu.classList.remove('active');
+       body.classList.remove('lock');
+
       anchorId = this.getAttribute('href');
       document.querySelector(anchorId).scrollIntoView({
         behavior: 'smooth', block: 'start'
@@ -60,6 +69,9 @@ for (anchor of anchors){
     })
   }
 }
+
+
+
 
 
 

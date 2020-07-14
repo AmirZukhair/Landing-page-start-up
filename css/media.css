@@ -90,6 +90,10 @@
 		transform: rotate(-45deg);
 		top: 50%;	
 	}
+
+  body.lock{
+  overflow: hidden;
+}
 	.header__list {
 		position: fixed;
 		display: flex;
